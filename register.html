@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Appointment Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css"/>
+</head>
+<body>
+    <video autoplay loop muted plays-inline class = "back-video">
+        <source src = "backi.mp4" type ="video/mp4">
+    </video>
+    <div class="container">
+        <h1 class="form-title">Book Appointment</h1>
+        <form action="#">
+            <div class="main-user-info">
+                <div class="user-input-box">
+                    <div class="r"><label for="firstName">First Name</label></div>
+                    <input type="text"
+                            id="fullName"
+                            name="FullName"
+                            placeholder="Enter First Name"
+                            pattern="[^\d]+"
+                            required
+                            />
+                </div>
+                <div class="user-input-box">
+                    <label for="userName">Last Name</label>
+                    <input type="text"
+                            id="userName"
+                            name="userName"
+                            placeholder="Enter Last Name"
+                            required
+                            />
+                </div>
+                <div class="user-input-box">
+                    <label for="email">Email</label>
+                    <input type="text"
+                            id="email"
+                            name="email"
+                            placeholder="Enter Email"
+                            required
+                            />
+                </div>
+                <div class="user-input-box">
+                    <div class="t"><label for="phoneNumber">Phone Number</label></div>
+                    <input type="text"
+                            id="phoneNumber"
+                            name="phoneNumber"
+                            placeholder="Enter Phone Number"
+                            required
+                            />
+                </div>
+                
+            </div>
+            <div class="gender-details-box">
+                <span class="gender-title"><u>Gender</u></span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">FeMale</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+            <div class="date">
+                <label for="Date"><u>Date</u></label><br>
+                <input type="text"
+                        id="Date"
+                        name="Date"
+                        placeholder="DD/MM/YY"/>
+            </div>
+            
+            <div class="form-group">
+                <p id="quest">Timings</p>
+            <select name="role" id="dropdown" class="formControl">
+                <option value="" disabled selected>Select</option>
+                <option value="">9:00am-11:00am</option>
+                <option value="">12:00pm-2:00pm</option>
+                <option value="">4:00pm-6:00pm</option>
+                <option value="">7:00pm-9:00pm</option>
+            
+    
+            </select> </div>
+
+            
+    
+        
+            <div class="form-submit-btn">
+                <a href='home.html'><input type="text" value="Book"></a>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>

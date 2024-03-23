@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  /* min-height: 100vh;
+  background: #eceaff;
+  color: #525252; */
+}
+nav {
+  background-color: #1a1a1a;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 79;
+}
+.logo {
+  width: 120px;
+}
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+}
+nav ul {
+  width: 100%;
+  text-align: right;
+}
+nav ul li {
+  /* display: inline-block;
+  list-style: none;
+  margin: 10px 20px; */
+  z-index: 29;
+  list-style: none;
+  display: inline-block;
+  padding: 6px 25px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #777;
+  cursor: pointer;
+  position: relative;
+  transition: all ease 0.8s;
+}
+nav ul li:after {
+  z-index: -10;
+  content: "";
+  background: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: ease all 0.8s;
+}
+
+nav ul li a:hover {
+  color: black;
+  z-index: 8;
+}
+nav ul li:hover::after {
+  top: 50%;
+  opacity: 1;
+}
+nav ul li a:active::after {
+  top: 50%;
+  opacity: 1;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.sub-menu-wrap {
+  position: absolute;
+  top: 100%;
+  right: 10%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+}
+.user-info img {
+  width: 60px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background-color: #ccc;
+  margin: 15px 0;
+}
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #525252;
+  margin: 12px 0;
+}
+.sub-menu-link p {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+.sub-menu-link span {
+  font-size: 22px;
+  transition: trasform 0.5s;
+}
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+}
+.sub-menu-link:hover p {
+  font-weight: 600;
+}

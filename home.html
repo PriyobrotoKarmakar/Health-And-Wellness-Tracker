@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="nav.css" />
+    <title>Web Design Mastery | Fitclub</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="assets/logo.png" class="logo" alt="" />
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="goalsetting.html">Goals</a></li>
+          <li><a href="community.html">Community</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <img
+          src="assets/user.png"
+          class="user-pic"
+          alt=""
+          onclick="toggleMenu()"
+        />
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="assets/user.png" alt="" />
+              <h2>Priyobroto</h2>
+            </div>
+            <hr />
+            <a href="#" class="sub-menu-link">
+              <img src="assets/profile.png" alt="" />
+              <p>Edit Profile</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="assets/setting.png" alt="" />
+              <p>Settings & Privacy</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="assets/help.png" alt="" />
+              <p>Help & Support</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="assets/logout.png" alt="" />
+              <p>logout</p>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <header class="section__container header__container">
+      <div class="header__content">
+        <span class="bg__blur"></span>
+        <span class="bg__blur header__blur"></span>
+        <h4>BEST FITNESS IN THE TOWN</h4>
+        <h1><span>MAKE</span> YOUR BODY SHAPE</h1>
+        <p>
+          Welcome to "FITCLUB" where we believe in nurturing both your physical
+          prowess and mental well-being. Our goal is to unleash your full
+          potential by providing comprehensive fitness programs that not only
+          shape your body but also strengthen your mind. Join us on a journey
+          towards holistic health and discover the transformative power of
+          balanced wellness.
+        </p>
+        <button class="btn" onclick="location.href='goalsetting.html'">
+          Goal Set
+        </button>
+      </div>
+      <div class="header__image">
+        <img src="assets/3.png" height="500" alt="header" />
+      </div>
+    </header>
+
+    <section class="section__container explore__container">
+      <div class="explore__header">
+        <h2 class="section__header">EXPLORE OUR PROGRAM</h2>
+        <div class="explore__nav">
+          <span><i class="ri-arrow-left-line"></i></span>
+          <span><i class="ri-arrow-right-line"></i></span>
+        </div>
+      </div>
+      <div class="explore__grid">
+        <div class="explore__card">
+          <span><i class="ri-boxing-fill"></i></span>
+          <h4>90-Day Fit Challenge:</h4>
+          <p>
+            Join our 90-day fitness challenge for expert guidance, personalized
+            plans, and remarkable transformations in strength, endurance, and
+            fitness levels.
+          </p>
+          <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-heart-pulse-fill"></i></span>
+          <h4>Stress Relief Through Yoga and Recreation</h4>
+          <p>
+            Experience inner peace and physical vitality through rejuvenating
+            yoga sessions and recreational activities. Say goodbye to stress and
+            tension and embrace a harmonious balance of mind and body.
+          </p>
+          <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-run-line"></i></span>
+          <h4>Meditation for Positivity and Motivation</h4>
+          <p>
+            Nurture a positive mindset and stay motivated on your wellness
+            journey with our meditation sessions. Experience the profound
+            benefits of mindfulness, navigating life's challenges with clarity,
+            resilience, and inner strength.
+          </p>
+          <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+        <div class="explore__card">
+          <span><i class="ri-shopping-basket-fill"></i></span>
+          <h4>Nutrition Guidance for Optimal Lifestyle</h4>
+          <p>
+            Elevate your lifestyle with personalized nutrition plans crafted by
+            our team of nutrition experts. Fuel your body with high-quality
+            nutrients and adopt sustainable dietary habits for enhanced vitality
+            and overall well-being.
+          </p>
+          <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container class__container">
+      <div class="class__image">
+        <span class="bg__blur"></span>
+        <img src="assets/2.jpg" alt="class" class="class__img-1" />
+        <img src="assets/class-2.jpg" alt="class" class="class__img-2" />
+      </div>
+      <div class="class__content">
+        <h2 class="section__header">
+          WE HAVE BEST NUTRITIONIST, PHYSIOTHERAPISTS AND PSYCHOTHERAPISTS
+        </h2>
+        <p>
+          Welcome to our center, where we bring together nutritionists,
+          physiotherapists, and psychotherapists to cater to all your wellness
+          needs. From dietary guidance to physical therapy and mental health
+          support, we're here to make your journey to well-being seamless and
+          effective. Experience the care and expertise of our integrated team as
+          we work together to help you feel your best, inside and out.
+        </p>
+        <button class="btn" onclick="location.href='register.html'">
+          Book An Expert
+        </button>
+      </div>
+    </section>
+
+    <section class="section__container join__container">
+      <h2 class="section__header">WHY JOIN US ?</h2>
+      <p class="section__subheader">
+        Our diverse membership base creates a friendly and supportive
+        atmosphere, where you can make friends and stay motivated.
+      </p>
+      <div class="join__image">
+        <img src="assets/1.jpg" alt="Join" />
+        <div class="join__grid">
+          <div class="join__card">
+            <span><i class="ri-user-star-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Personal Trainer</h4>
+              <p>Unlock your potential with our expert Personal Trainers.</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-vidicon-fill"></i></span>
+            <div class="join__card__content">
+              <h4>Practice Sessions</h4>
+              <p>Elevate your fitness with practice sessions.</p>
+            </div>
+          </div>
+          <div class="join__card">
+            <span><i class="ri-building-line"></i></span>
+            <div class="join__card__content">
+              <h4>Good Management</h4>
+              <p>Supportive management, for your fitness success.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container price__container">
+      <h2 class="section__header">OUR PRICING PLAN</h2>
+      <p class="section__subheader">
+        Our pricing plan comes with various membership tiers, each tailored to
+        cater to different preferences and fitness aspirations.
+      </p>
+      <div class="price__grid">
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Basic Plan</h4>
+            <h3>10,000/YEAR</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Smart workout plan
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Guidance of expert trainer
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Spiritual and motivational workshop
+            </p>
+          </div>
+          <button class="btn price__btn" onclick="location.href='payment.html'">
+            Join Now
+          </button>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Advance Plan</h4>
+            <h3>20,000/Year</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              PRO Gyms
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Smart workout plan
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Guidance of expert trainer
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Smart Nutrition plan
+            </p>
+          </div>
+          <button class="btn price__btn" onclick="location.href='payment.html'">
+            Join Now
+          </button>
+        </div>
+        <div class="price__card">
+          <div class="price__card__content">
+            <h4>Primium Plan</h4>
+            <h3>30,000/YEAR</h3>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              ELITE Gyms & Classes
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              PRO Gyms plans
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Smart Nutrition plan
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Guidance of expert trainer
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Yoga & Meditation class
+            </p>
+            <p>
+              <i class="ri-checkbox-circle-line"></i>
+              Spiritual and motivational workshop
+            </p>
+          </div>
+          <button class="btn price__btn" onclick="location.href='payment.html'">
+            Join Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section__container footer__container">
+      <span class="bg__blur"></span>
+      <span class="bg__blur footer__blur"></span>
+      <div class="footer__col">
+        <div class="footer__logo"><img src="assets/logo.png" alt="logo" /></div>
+        <p>
+          Take the first step towards a healthier, stronger you with our
+          unbeatable pricing plans. Let's sweat, achieve, and conquer together!
+        </p>
+        <div class="footer__socials">
+          <a href="#"><i class="ri-facebook-fill"></i></a>
+          <a href="#"><i class="ri-instagram-line"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#">Business</a>
+        <a href="#">Franchise</a>
+        <a href="#">Partnership</a>
+        <a href="#">Network</a>
+      </div>
+      <div class="footer__col">
+        <h4>About Us</h4>
+        <a href="#">Blogs</a>
+        <a href="#">Security</a>
+        <a href="#">Careers</a>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="https://www.calculator.net/bmi-calculator.html"
+          >BMI Calculator</a
+        >
+      </div>
+    </footer>
+    <div class="footer__bar"></div>
+  </body>
+  <script src="nav.js"></script>
+</html>

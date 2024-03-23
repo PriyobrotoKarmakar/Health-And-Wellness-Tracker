@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <nav>
+        <img src="assets/logo.png" class="logo" alt="" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Goals</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <img
+          src="assets/user.png"
+          class="user-pic"
+          alt=""
+          onclick="toggleMenu()"
+        />
+
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="assets/user.png" alt="" />
+              <h2>Priyobroto</h2>
+            </div>
+            <hr />
+            <a href="#" class="sub-menu-link">
+              <img src="assets/profile.png" alt="" />
+              <p>Edit Profile</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="assets/setting.png" alt="" />
+              <p>Settings & Privacy</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="assets/help.png" alt="" />
+              <p>Help & Support</p>
+              <span></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="assets/logout.png" alt="" />
+              <p>logout</p>
+              <span></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="dot"></div>
+    <div class="circle"></div>
+  </body>
+  <script src="nav.js"></script>
+</html>
